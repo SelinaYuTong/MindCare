@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_medium"
+        android:fontFamily="@font/raleway_bold"
         android:text="@string/welcome_to"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -24,7 +24,7 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_medium"
+        android:fontFamily="@font/raleway_extrabold"
         android:text="@string/app_name"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,6 +44,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/lifesavers_bust" />
 
+    <Button
+        android:id="@+id/sign_up_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="signupBtnClick"
+        android:text="Sign Up"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.712" />
+
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="300dp"
@@ -52,21 +66,10 @@
         android:onClick="signupBtnClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.836"
         app:srcCompat="@drawable/sign_up_button" />
 
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="300dp"
-        android:layout_height="65dp"
-        android:background="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958"
-        app:srcCompat="@drawable/login_button" />
 </androidx.constraintlayout.widget.ConstraintLayout>
