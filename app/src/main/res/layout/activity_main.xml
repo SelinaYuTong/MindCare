@@ -47,6 +47,7 @@
         android:layout_width="300dp"
         android:layout_height="65dp"
         android:background="@drawable/rounded_corners"
+        android:onClick="signupBtnClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
