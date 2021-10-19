@@ -7,7 +7,7 @@
     tools:context=".IntroActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/sitting_floor_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -15,11 +15,11 @@
         app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.195"
-        app:srcCompat="@drawable/Sitting_at_home" />
+        app:layout_constraintVertical_bias="0.191"
+        app:srcCompat="@drawable/sitting_on_floor" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/skiptour_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_medium"
@@ -29,11 +29,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.771" />
+        app:layout_constraintTop_toBottomOf="@+id/intro1_description" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/intro1_description"
         android:layout_width="296dp"
         android:layout_height="86dp"
         android:contentDescription="Whether it is breathing conrrol, meditation, or doing physical exercises, we might just have the activities and tips for you."
@@ -41,8 +40,21 @@
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.214" />
+        app:layout_constraintTop_toBottomOf="@+id/sitting_floor_image"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <TextView
+        android:id="@+id/main_description_intro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Intro 1 description, play and discover"
+        android:fontFamily="@font/raleway_extrabold"
+        android:text="Play and discover ways to relax"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/intro1_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sitting_floor_image" />
 </androidx.constraintlayout.widget.ConstraintLayout>
