@@ -8,85 +8,196 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:padding="10dp">
 
-        <TextView
-            android:id="@+id/textView7"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/welcome_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_bold"
+                android:padding="20dp"
+                android:text="Welcome"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="username"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="username"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/avatar_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="20dp"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:padding="10dp">
 
-        <TextView
-            android:id="@+id/textView3"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/breath_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_bold"
+                android:padding="10dp"
+                android:text="Breathing Practice"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/breath_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Abdominal breathing  brings about a range of health benefits." />
+
+        </LinearLayout>
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/breathing_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="Electrocardiogram image"
+            android:padding="10dp"
             app:srcCompat="@drawable/electrocardiogram" />
 
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:padding="10dp">
 
-        <TextView
-            android:id="@+id/textView4"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/meditation_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_bold"
+                android:padding="10dp"
+                android:text="Meditation Activity"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/meditation_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Mindfulness meditation can reduce stress and increase well-being." />
+        </LinearLayout>
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/meditation_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="Meditation image"
+            android:padding="10dp"
             app:srcCompat="@drawable/meditation" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:padding="10dp">
 
-        <TextView
-            android:id="@+id/textView5"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/exercise_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_bold"
+                android:padding="10dp"
+                android:text="Physical exercise"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/exercise_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="Because your mind and body are one, practice for your well-being." />
+        </LinearLayout>
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/exercise_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="Exercising image"
+            android:padding="10dp"
             app:srcCompat="@drawable/exercise" />
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent"
+        android:padding="10dp">
 
-        <TextView
-            android:id="@+id/textView6"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/meetup_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_bold"
+                android:padding="10dp"
+                android:text="Join the Community"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_medium"
+                android:padding="10dp"
+                android:text="We are more likely to achieve our goals if we are in a community." />
+        </LinearLayout>
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/meetup_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="Meeting up image"
+            android:padding="10dp"
             app:srcCompat="@drawable/meetup" />
     </TableRow>
 
