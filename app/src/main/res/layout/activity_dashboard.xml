@@ -22,17 +22,17 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/raleway_bold"
                 android:padding="20dp"
-                android:text="Welcome"
+                android:text="@string/welcome"
                 android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/username"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="username"
+                android:contentDescription="@string/username"
                 android:fontFamily="@font/raleway_medium"
                 android:padding="10dp"
-                android:text="username"
+                android:text="@string/username"
                 android:textSize="14sp" />
 
         </LinearLayout>
@@ -42,6 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/photo_of_user"
             android:padding="20dp"
             app:srcCompat="@android:drawable/ic_menu_camera" />
 
@@ -64,7 +65,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/raleway_bold"
                 android:padding="10dp"
-                android:text="Breathing Practice"
+                android:text="@string/breathing_practice"
                 android:textSize="20sp" />
 
             <TextView
@@ -73,7 +74,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/raleway_medium"
                 android:padding="10dp"
-                android:text="Abdominal breathing  brings about a range of health benefits." />
+                android:text="@string/abdominal_breathing_brings_about_a_range_of_health_benefits" />
 
         </LinearLayout>
 
@@ -81,7 +82,7 @@
             android:id="@+id/breathing_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="Electrocardiogram image"
+            android:contentDescription="@string/electrocardiogram_image"
             android:padding="10dp"
             app:srcCompat="@drawable/electrocardiogram" />
 
@@ -104,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/raleway_bold"
                 android:padding="10dp"
-                android:text="Meditation Activity"
+                android:text="@string/meditation_activity"
                 android:textSize="20sp" />
 
             <TextView
@@ -113,16 +114,17 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/raleway_medium"
                 android:padding="10dp"
-                android:text="Mindfulness meditation can reduce stress and increase well-being." />
+                android:text="@string/mindfulness_meditation_can_reduce_stress_and_increase_well_being" />
         </LinearLayout>
 
         <ImageView
             android:id="@+id/meditation_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="Meditation image"
+            android:contentDescription="@string/meditation_image"
             android:padding="10dp"
-            app:srcCompat="@drawable/meditation" />
+            app:srcCompat="@drawable/meditation"
+            tools:ignore="ImageContrastCheck" />
     </TableRow>
 
     <TableRow
@@ -142,7 +144,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/raleway_bold"
                 android:padding="10dp"
-                android:text="Physical exercise"
+                android:text="@string/physical_exercise"
                 android:textSize="20sp" />
 
             <TextView
@@ -151,14 +153,14 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/raleway_medium"
                 android:padding="10dp"
-                android:text="Because your mind and body are one, practice for your well-being." />
+                android:text="@string/because_your_mind_and_body_are_one_practice_for_your_well_being" />
         </LinearLayout>
 
         <ImageView
             android:id="@+id/exercise_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="Exercising image"
+            android:contentDescription="@string/exercising_image"
             android:padding="10dp"
             app:srcCompat="@drawable/exercise" />
     </TableRow>
@@ -180,7 +182,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/raleway_bold"
                 android:padding="10dp"
-                android:text="Join the Community"
+                android:text="@string/join_the_community"
                 android:textSize="20sp" />
 
             <TextView
@@ -189,14 +191,14 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/raleway_medium"
                 android:padding="10dp"
-                android:text="We are more likely to achieve our goals if we are in a community." />
+                android:text="@string/we_are_more_likely_to_achieve_our_goals_if_we_are_in_a_community" />
         </LinearLayout>
 
         <ImageView
             android:id="@+id/meetup_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="Meeting up image"
+            android:contentDescription="@string/meeting_up_image"
             android:padding="10dp"
             app:srcCompat="@drawable/meetup" />
     </TableRow>
