@@ -16,12 +16,12 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
     }
     public void signupBtnClick(View view) {
-        Intent intent = new Intent(this, IntroActivity.class);
+        Intent intent = new Intent(this, Signup.class);
         startActivity(intent);
     }
 
     public void loginBtnClick(View view){
-        Intent intent = new Intent(this, Signup.class);
+        Intent intent = new Intent(this, IntroActivity.class);
         startActivity(intent);
     }
 }
