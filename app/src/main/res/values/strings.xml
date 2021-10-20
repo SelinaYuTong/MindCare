@@ -17,7 +17,14 @@
     <string name="join_the_community">Join the community</string>
     <string name="we_are_more_likely_to_achieve_our_goals_if_we_are_in_a_community">We are more likely to achieve our goals if we are in a community.</string>
     <string name="welcome">Welcome</string>
-    <string name="username">username</string>
-    <string name="username">username</string>
     <string name="photo_of_user">Photo of user</string>
+    <string name="shows_images_for_the_dashboard">shows images for the dashboard</string>
+    <string name="name_of_the_user">name of the user</string>
+    <string name="your_name">your name</string>
+    <string name="skip_tour">Skip tour</string>
+    <string name="a_man_sitting_on_the_floor">A man sitting on the floor</string>
+    <string name="whether_it_is_breathing_conrrol_meditation_or_doing_physical_exercises_we_might_just_have_the_activities_and_tips_for_you">Whether it is breathing conrrol, meditation, or doing physical exercises, we might just have the activities and tips for you.</string>
+    <string name="whether_it_is_breathing_conrrol_meditation_or_doing_physical_exercises_we_might_just_have_the_activities_and_tips_for_you">Whether it is breathing conrrol, meditation, or doing physical exercises, we might just have the activities and tips for you.</string>
+    <string name="intro_1_description_play_and_discover">Intro 1 description, play and discover</string>
+    <string name="play_and_discover_ways_to_relax">Play and discover ways to relax</string>
 </resources>

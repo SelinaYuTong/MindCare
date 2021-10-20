@@ -1,63 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard">
+    tools:context=".Dashboard"
+    android:orientation="vertical">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp">
+    <LinearLayout
+        android:id="@+id/welcome_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/welcome_msg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:fontFamily="@font/raleway_bold"
+            android:padding="20dp"
+            android:text="@string/welcome"
+            android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/welcome_msg"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/raleway_bold"
-                android:padding="20dp"
-                android:text="@string/welcome"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/username"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:contentDescription="@string/username"
-                android:fontFamily="@font/raleway_medium"
-                android:padding="10dp"
-                android:text="@string/username"
-                android:textSize="14sp" />
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/username_text"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/name_of_the_user"
+            android:fontFamily="@font/raleway_medium"
+            android:padding="10dp"
+            android:text="@string/your_name"
+            android:textSize="14sp" />
 
         <ImageView
-            android:id="@+id/avatar_pic"
-            android:layout_width="wrap_content"
+            android:id="@+id/user_pic"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:contentDescription="@string/photo_of_user"
             android:padding="20dp"
-            app:srcCompat="@android:drawable/ic_menu_camera" />
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            tools:ignore="ImageContrastCheck" />
 
-    </TableRow>
+    </LinearLayout>
 
-    <TableRow
+    <ImageView
+        android:id="@+id/menu_display"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp">
+        android:layout_height="150dp"
+        android:contentDescription="@string/shows_images_for_the_dashboard"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@tools:sample/avatars" />
 
-        <LinearLayout
+    <LinearLayout
+        android:id="@+id/breathing_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/breathing_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/electrocardiogram_image"
+            android:padding="10dp"
+            app:srcCompat="@drawable/electrocardiogram" />
+
+        <LinearLayout
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="10dp">
+            android:padding="2dp">
 
             <TextView
                 android:id="@+id/breath_title"
@@ -77,24 +91,25 @@
                 android:text="@string/abdominal_breathing_brings_about_a_range_of_health_benefits" />
 
         </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/meditation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/breathing_image"
+            android:id="@+id/meditation_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/electrocardiogram_image"
+            android:contentDescription="@string/meditation_image"
             android:padding="10dp"
-            app:srcCompat="@drawable/electrocardiogram" />
-
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp">
+            app:srcCompat="@drawable/meditation"
+            tools:ignore="ImageContrastCheck" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="295dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="10dp">
@@ -117,20 +132,21 @@
                 android:text="@string/mindfulness_meditation_can_reduce_stress_and_increase_well_being" />
         </LinearLayout>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/physical_exercise_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
         <ImageView
-            android:id="@+id/meditation_image"
+            android:id="@+id/exercise_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/meditation_image"
+            android:contentDescription="@string/exercising_image"
             android:padding="10dp"
-            app:srcCompat="@drawable/meditation"
-            tools:ignore="ImageContrastCheck" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp">
+            app:srcCompat="@drawable/exercise" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -155,20 +171,21 @@
                 android:padding="10dp"
                 android:text="@string/because_your_mind_and_body_are_one_practice_for_your_well_being" />
         </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/community_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/exercise_image"
+            android:id="@+id/meetup_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/exercising_image"
+            android:contentDescription="@string/meeting_up_image"
             android:padding="10dp"
-            app:srcCompat="@drawable/exercise" />
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp">
+            app:srcCompat="@drawable/meetup" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -193,14 +210,6 @@
                 android:padding="10dp"
                 android:text="@string/we_are_more_likely_to_achieve_our_goals_if_we_are_in_a_community" />
         </LinearLayout>
+    </LinearLayout>
 
-        <ImageView
-            android:id="@+id/meetup_image"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/meeting_up_image"
-            android:padding="10dp"
-            app:srcCompat="@drawable/meetup" />
-    </TableRow>
-
-</TableLayout>
+</LinearLayout>
