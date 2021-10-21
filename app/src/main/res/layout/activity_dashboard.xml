@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,212 +7,191 @@
     tools:context=".Dashboard"
     android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/welcome_bar"
+    <ImageView
+        android:id="@+id/user_pic"
+        android:layout_width="100dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/photo_of_user"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/control"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="10dp">
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/welcome"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/welcome_msg"
-            android:layout_width="153dp"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/raleway_bold"
-            android:padding="20dp"
-            android:text="@string/welcome"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/username_text"
-            android:layout_width="185dp"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/name_of_the_user"
-            android:fontFamily="@font/raleway_medium"
-            android:padding="10dp"
-            android:text="@string/your_name"
-            android:textSize="14sp" />
-
-        <ImageView
-            android:id="@+id/user_pic"
-            android:layout_width="0dp"
-            android:layout_height="65dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/photo_of_user"
-            android:padding="20dp"
-            app:srcCompat="@drawable/control"
-            tools:ignore="ImageContrastCheck" />
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/username_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/raleway_medium"
+        android:text="@string/name_of_the_user"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/user_pic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263" />
 
     <ImageView
-        android:id="@+id/menu_display"
-        android:layout_width="match_parent"
-        android:layout_height="112dp"
-        android:contentDescription="@string/shows_images_for_the_dashboard"
-        android:padding="10dp"
-        tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@drawable/man" />
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="664dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/man" />
 
-    <LinearLayout
-        android:id="@+id/breathing_bar"
-        android:layout_width="match_parent"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="184dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/lungs" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/lotus" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/casual_exercise" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/teamwork" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="212dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="@font/raleway_medium"
+        android:text="@string/abdominal_breathing_brings_about_a_range_of_health_benefits"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.967"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="108dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/breathing_practice"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-        <ImageView
-            android:id="@+id/breathing_image"
-            android:layout_width="121dp"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/electrocardiogram_image"
-            android:padding="10dp"
-            app:srcCompat="@drawable/lungs"
-            tools:ignore="ImageContrastCheck" />
-
-        <LinearLayout
-            android:layout_width="289dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/breath_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/raleway_bold"
-                android:padding="10dp"
-                android:text="@string/breathing_practice"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/breath_desc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/raleway_medium"
-                android:padding="10dp"
-                android:text="@string/abdominal_breathing_brings_about_a_range_of_health_benefits" />
-
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/meditation_bar"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="108dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/meditation_activity"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-        <ImageView
-            android:id="@+id/meditation_image"
-            android:layout_width="121dp"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/meditation_image"
-            android:padding="10dp"
-            app:srcCompat="@drawable/lotus"
-            tools:ignore="ImageContrastCheck" />
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="212dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/raleway_medium"
+        android:text="@string/mindfulness_meditation_can_reduce_stress_and_increase_well_being"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="369dp" />
 
-        <LinearLayout
-            android:layout_width="292dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/meditation_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/raleway_bold"
-                android:padding="10dp"
-                android:text="@string/meditation_activity"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/meditation_desc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/raleway_medium"
-                android:padding="10dp"
-                android:text="@string/mindfulness_meditation_can_reduce_stress_and_increase_well_being" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/physical_exercise_bar"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="116dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/physical_exercise"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
-        <ImageView
-            android:id="@+id/exercise_image"
-            android:layout_width="120dp"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/exercising_image"
-            android:padding="10dp"
-            app:srcCompat="@drawable/casual_exercise" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="212dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/raleway_medium"
+        android:text="@string/whether_it_is_breathing_conrrol_meditation_or_doing_physical_exercises_we_might_just_have_the_activities_and_tips_for_you"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="471dp" />
 
-        <LinearLayout
-            android:layout_width="293dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/exercise_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/raleway_bold"
-                android:padding="10dp"
-                android:text="@string/physical_exercise"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/exercise_desc"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/raleway_medium"
-                android:padding="10dp"
-                android:text="@string/because_your_mind_and_body_are_one_practice_for_your_well_being" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/community_bar"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="100dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/join_the_community"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
-        <ImageView
-            android:id="@+id/meetup_image"
-            android:layout_width="121dp"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/meeting_up_image"
-            android:padding="10dp"
-            app:srcCompat="@drawable/teamwork"
-            tools:ignore="ImageContrastCheck" />
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="212dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/we_are_more_likely_to_achieve_our_goals_if_we_are_in_a_community"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="573dp" />
 
-        <LinearLayout
-            android:layout_width="292dp"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/meetup_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/raleway_bold"
-                android:padding="10dp"
-                android:text="@string/join_the_community"
-                android:textSize="20sp" />
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/raleway_medium"
-                android:padding="10dp"
-                android:text="@string/we_are_more_likely_to_achieve_our_goals_if_we_are_in_a_community" />
-        </LinearLayout>
-    </LinearLayout>
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
