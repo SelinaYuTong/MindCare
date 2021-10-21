@@ -33,4 +33,12 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="Breathing_practice_title">First, exhale completely. Then repeat :</string>
+    <string name="Inhale_text">Inhale (4 secs).</string>
+    <string name="Exhale_text">Exhale (6 secs).</string>
+    <string name="Final_sentence">Repeat 33 times (5 mins).</string>
+    <string name="Start_Btn">Start</string>
+    <string name="Return_arrow">Back arrow icon</string>
+    <string name="Exhale_image">Exhale image</string>
+    <string name="Inhale_image">Inhale image</string>
 </resources>
