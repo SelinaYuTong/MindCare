@@ -12,6 +12,9 @@ import android.widget.Toast;
 
 public class SignUpActivity extends AppCompatActivity {
 
+    final int MIN_PASSWORD_LENGTH = 6;
+    final int MIN_USERNAME_LENGTH = 3;
+
     private EditText userName;
     private EditText email;
     private EditText password;
@@ -49,6 +52,18 @@ public class SignUpActivity extends AppCompatActivity {
         if (isEmpty(userName)) {
             Toast t = Toast.makeText(this, "You must enter user name to register!", Toast.LENGTH_SHORT);
             t.show();
+        }
+
+        if (userName.getText().length() < MIN_USERNAME_LENGTH) {
+            userName.setError("Password Length must be more than " + MIN_USERNAME_LENGTH + "characters");
+        }
+
+        if (isEmpty(password)) {
+            email.setError("Please enter a password!");
+        }
+
+        if (password.getText().length() < MIN_PASSWORD_LENGTH) {
+            password.setError("Password Length must be more than " + MIN_PASSWORD_LENGTH + "characters");
         }
 
         if (isValidEmail(email) == false) {
