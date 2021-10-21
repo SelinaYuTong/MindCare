@@ -41,19 +41,20 @@ public class SignUpActivity extends AppCompatActivity {
 
     public void signUpBtnClick(View view) {
         //Sign up logic should go here
-        checkDataEntered();
-        SharedPreferences preferences = getSharedPreferences(getString(R.string.SIGNUPPREFERENCES),MODE_PRIVATE);
-        String newName = userName.getText().toString();
-        String newEmail = email.getText().toString();
-        String newPassword = password.getText().toString();
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putString("newName", newName);
-        editor.putString("newEmail", newEmail);
-        editor.putString("newPassword", newPassword);
-        editor.commit();
-        Toast.makeText(this, "Your registration is successful!", Toast.LENGTH_LONG).show();
-        Intent intent = new Intent(this, LoginActivity.class);
-        startActivity(intent);
+        if(checkDataEntered()) {
+            SharedPreferences preferences = getSharedPreferences(getString(R.string.SIGNUPPREFERENCES), MODE_PRIVATE);
+            String newName = userName.getText().toString();
+            String newEmail = email.getText().toString();
+            String newPassword = password.getText().toString();
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putString("newName", newName);
+            editor.putString("newEmail", newEmail);
+            editor.putString("newPassword", newPassword);
+            editor.commit();
+            Toast.makeText(this, "Your registration is successful!", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(this, LoginActivity.class);
+            startActivity(intent);
+        }
     }
 
     boolean isValidEmail(EditText text) {
@@ -69,23 +70,29 @@ public class SignUpActivity extends AppCompatActivity {
     /**
      * Validate entered data
      */
-    void checkDataEntered() {
+    public boolean checkDataEntered() {
         if (isEmpty(userName)) {
             userName.setError("Please enter your user name!");
             Toast t = Toast.makeText(this, "You must enter user name to register!", Toast.LENGTH_SHORT);
             t.show();
+            return false;
         }else if (userName.getText().length() < MIN_USERNAME_LENGTH) {
             userName.setError("Password Length must be more than " + MIN_USERNAME_LENGTH + " characters");
+            return false;
         }
 
         if (isEmpty(password)) {
             password.setError("Please enter a password!");
+            return false;
         }else if (password.getText().length() < MIN_PASSWORD_LENGTH) {
             password.setError("Password Length must be more than " + MIN_PASSWORD_LENGTH + " characters");
+            return false;
         }
 
         if (isValidEmail(email) == false) {
             email.setError("Please enter valid email!");
+            return false;
         }
+        return true;
     }
 }
