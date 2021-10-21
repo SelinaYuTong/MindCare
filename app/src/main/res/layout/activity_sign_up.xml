@@ -73,6 +73,7 @@
             android:layout_marginTop="30dp"
             android:layout_marginBottom="10dp"
             android:backgroundTint="@color/purple_200"
+            android:onClick="signUpBtnClick"
             android:text="@string/sign_up" />
     </LinearLayout>
 

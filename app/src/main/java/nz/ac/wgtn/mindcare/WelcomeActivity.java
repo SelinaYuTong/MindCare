@@ -19,7 +19,7 @@ public class WelcomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_welcome);
         getSupportActionBar().hide();
 
-        btnSignup = findViewById(R.id.signupBtn);
+//          btnSignup = findViewById(R.id.signupBtn);
 //        btnSignup.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -30,24 +30,23 @@ public class WelcomeActivity extends AppCompatActivity {
 //            }
 //        });
 
-        btnLogin = findViewById(R.id.loginBtn);
-        btnLogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btnLogin.setBackgroundColor(Color.BLUE);
-                Intent intent = new Intent(v.getContext(), LoginActivity.class);
-                startActivity(intent);
-            }
-        });
+//          btnLogin = findViewById(R.id.loginBtn);
+//        btnLogin.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                btnLogin.setBackgroundColor(Color.BLUE);
+//                Intent intent = new Intent(v.getContext(), LoginActivity.class);
+//                startActivity(intent);
+//            }
+//        });
     }
     public void signupBtnClick(View view) {
-        btnSignup.setBackgroundColor(Color.BLUE);
         Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
     }
 
     public void loginBtnClick(View view){
-        Intent intent = new Intent(this, IntroActivity.class);
+        Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
     }
 }
