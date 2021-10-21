@@ -56,11 +56,12 @@
             android:textSize="14sp" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/login_btn"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:backgroundTint="#B39DDB"
+            android:onClick="loginBtnClick"
             android:text="LOGIN" />
     </LinearLayout>
 

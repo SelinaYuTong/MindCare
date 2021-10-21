@@ -15,7 +15,7 @@ public class IntroActivity extends AppCompatActivity {
         getSupportActionBar().hide();
     }
 
-    public void skipBtnClick(View view){
+    public void skipOnClick(View view){
         Intent intent = new Intent(this, DashboardActivity.class);
         startActivity(intent);
     }

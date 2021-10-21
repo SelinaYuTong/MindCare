@@ -20,11 +20,11 @@
         app:srcCompat="@drawable/sitting_on_floor" />
 
     <Button
-        android:id="@+id/skiptour_btn"
+        android:id="@+id/skip_btn"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/raleway_bold"
-        android:onClick="skipBtnClick"
+        android:onClick="skipOnClick"
         android:text="@string/skip_tour"
         android:textAlignment="center"
         app:cornerRadius="10dp"

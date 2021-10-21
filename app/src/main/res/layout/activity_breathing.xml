@@ -48,6 +48,7 @@
         android:layout_height="70dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="57dp"
+        android:onClick="longBreathOnClick"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/breating_desc"
         app:srcCompat="@drawable/ellipse_arrow" />
