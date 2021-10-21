@@ -9,9 +9,9 @@
 
     <ImageView
         android:id="@+id/user_pic"
-        android:layout_width="100dp"
-        android:layout_height="72dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="70dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:layout_weight="1"
         android:contentDescription="@string/photo_of_user"
@@ -197,53 +197,59 @@
         android:layout_height="50dp"
         android:layout_marginStart="31dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="162dp"
+        android:layout_marginBottom="228dp"
         android:text="@string/we_are_more_likely_to_achieve_our_goals_if_we_are_in_a_community"
-        app:layout_constraintBottom_toTopOf="@+id/stats_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/imageView6" />
 
-    <ImageView
-        android:id="@+id/activities_icon"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="16dp"
-        android:layout_weight="1"
-        android:src="@drawable/yoga"
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_bar"
+        android:layout_width="359dp"
+        android:layout_height="81dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/stats_icon"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.979">
 
-    <ImageView
-        android:id="@+id/stats_icon"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="16dp"
-        android:src="@drawable/statistic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/contact_icon" />
+        <ImageView
+            android:id="@+id/activities_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:src="@drawable/yoga"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/contact_icon"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="51dp"
-        android:layout_marginBottom="16dp"
-        android:src="@drawable/contact"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/settings_icon" />
+        <ImageView
+            android:id="@+id/stats_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/statistic"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/settings_icon"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:src="@drawable/settings"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        <ImageView
+            android:id="@+id/contact_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/contact" />
+
+        <ImageView
+            android:id="@+id/settings_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="300dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/settings" />
+    </com.google.android.material.navigation.NavigationView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
