@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MindCare">
         <activity
+            android:name=".BreathingActivity"
+            android:exported="false" />
+        <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity

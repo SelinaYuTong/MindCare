@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Dashboard"
+    tools:context=".DashboardActivity"
     android:orientation="vertical">
 
     <ImageView
@@ -193,5 +193,38 @@
         android:text="@string/we_are_more_likely_to_achieve_our_goals_if_we_are_in_a_community"
         app:layout_constraintEnd_toEndOf="parent"
         tools:layout_editor_absoluteY="573dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:src="@drawable/yoga"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="785dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/statistic"
+        tools:layout_editor_absoluteX="123dp"
+        tools:layout_editor_absoluteY="785dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/contact"
+        tools:layout_editor_absoluteX="227dp"
+        tools:layout_editor_absoluteY="785dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/settings"
+        tools:layout_editor_absoluteX="327dp"
+        tools:layout_editor_absoluteY="785dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
