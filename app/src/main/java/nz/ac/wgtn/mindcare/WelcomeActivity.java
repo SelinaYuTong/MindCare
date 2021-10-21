@@ -20,14 +20,15 @@ public class WelcomeActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         btnSignup = findViewById(R.id.signupBtn);
-        btnSignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                btnSignup.setBackgroundColor(Color.BLUE);
-                Intent intent = new Intent(v.getContext(), SignUpActivity.class);
-                startActivity(intent);
-            }
-        });
+//        btnSignup.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                btnSignup.setBackgroundColor(Color.BLUE);
+//                Intent intent = new Intent(v.getContext(), SignUpActivity.class);
+//                startActivity(intent);
+////              signupBtnClick(v);
+//            }
+//        });
 
         btnLogin = findViewById(R.id.loginBtn);
         btnLogin.setOnClickListener(new View.OnClickListener() {
@@ -40,7 +41,8 @@ public class WelcomeActivity extends AppCompatActivity {
         });
     }
     public void signupBtnClick(View view) {
-        Intent intent = new Intent(this, LoginActivity.class);
+        btnSignup.setBackgroundColor(Color.BLUE);
+        Intent intent = new Intent(this, SignUpActivity.class);
         startActivity(intent);
     }
 
