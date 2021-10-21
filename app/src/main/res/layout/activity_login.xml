@@ -21,7 +21,8 @@
             android:layout_marginTop="30dp"
             android:fontFamily="@font/raleway_bold"
             android:text="Welcome Back"
-            android:textSize="16sp" />
+            android:textAlignment="center"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/signup_text2"
@@ -30,7 +31,7 @@
             android:layout_marginTop="30dp"
             android:fontFamily="@font/raleway_bold"
             android:text="Login"
-            android:textSize="24sp" />
+            android:textSize="48sp" />
 
         <ImageView
             android:id="@+id/signup_image"
@@ -52,6 +53,14 @@
             android:layout_height="55dp"
             android:hint="Password"
             android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#B39DDB"
+            android:text="LOGIN" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
