@@ -2,6 +2,8 @@ package nz.ac.wgtn.mindcare;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -10,6 +12,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+/**
+ * The signup activity class provides method for:
+ * 1. validate entered user data
+ * 2. register user with using shared preferences to store user data
+ */
 public class SignUpActivity extends AppCompatActivity {
 
     final int MIN_PASSWORD_LENGTH = 6;
@@ -33,9 +40,20 @@ public class SignUpActivity extends AppCompatActivity {
     }
 
     public void signUpBtnClick(View view) {
-        String uName = userName.getText().toString();
         //Sign up logic should go here
         checkDataEntered();
+        SharedPreferences preferences = getSharedPreferences(getString(R.string.SIGNUPPREFERENCES),MODE_PRIVATE);
+        String newName = userName.getText().toString();
+        String newEmail = email.getText().toString();
+        String newPassword = password.getText().toString();
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("newName", newName);
+        editor.putString("newEmail", newEmail);
+        editor.putString("newPassword", newPassword);
+        editor.commit();
+        Toast.makeText(this, "Your registration is successful!", Toast.LENGTH_LONG).show();
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
     }
 
     boolean isValidEmail(EditText text) {
@@ -48,6 +66,9 @@ public class SignUpActivity extends AppCompatActivity {
         return TextUtils.isEmpty(str);
     }
 
+    /**
+     * Validate entered data
+     */
     void checkDataEntered() {
         if (isEmpty(userName)) {
             userName.setError("Please enter your user name!");

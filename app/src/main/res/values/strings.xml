@@ -41,4 +41,5 @@
     <string name="Return_arrow">Back arrow icon</string>
     <string name="Exhale_image">Exhale image</string>
     <string name="Inhale_image">Inhale image</string>
+    <string name="SIGNUPPREFERENCES">SIGNUPPREFS</string>
 </resources>
