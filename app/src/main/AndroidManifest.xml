@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_adaptive_fore"
         android:supportsRtl="true"
         android:theme="@style/Theme.MindCare">
-
+        <activity
+            android:name=".PlayerActivity"
+            android:exported="false" />
         <activity
             android:name=".NavigationActivity"
             android:exported="false"
