@@ -50,24 +50,21 @@ public class SignUpActivity extends AppCompatActivity {
 
     void checkDataEntered() {
         if (isEmpty(userName)) {
+            userName.setError("Please enter your user name!");
             Toast t = Toast.makeText(this, "You must enter user name to register!", Toast.LENGTH_SHORT);
             t.show();
-        }
-
-        if (userName.getText().length() < MIN_USERNAME_LENGTH) {
-            userName.setError("Password Length must be more than " + MIN_USERNAME_LENGTH + "characters");
+        }else if (userName.getText().length() < MIN_USERNAME_LENGTH) {
+            userName.setError("Password Length must be more than " + MIN_USERNAME_LENGTH + " characters");
         }
 
         if (isEmpty(password)) {
-            email.setError("Please enter a password!");
-        }
-
-        if (password.getText().length() < MIN_PASSWORD_LENGTH) {
-            password.setError("Password Length must be more than " + MIN_PASSWORD_LENGTH + "characters");
+            password.setError("Please enter a password!");
+        }else if (password.getText().length() < MIN_PASSWORD_LENGTH) {
+            password.setError("Password Length must be more than " + MIN_PASSWORD_LENGTH + " characters");
         }
 
         if (isValidEmail(email) == false) {
-            email.setError("Enter valid email!");
+            email.setError("Please enter valid email!");
         }
     }
 }
