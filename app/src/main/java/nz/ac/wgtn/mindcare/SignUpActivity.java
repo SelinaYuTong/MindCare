@@ -39,6 +39,10 @@ public class SignUpActivity extends AppCompatActivity {
         btnSignup = findViewById(R.id.btnregister);
     }
 
+    /**
+     * after clicking on sign up button without any errors, it will jump to log in view
+     * @param view sign up view
+     */
     public void signUpBtnClick(View view) {
         //Sign up logic should go here
         if(checkDataEntered()) {
