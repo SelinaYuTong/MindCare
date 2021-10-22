@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/raleway_bold"
-            android:text="Hello Beautiful"
+            android:text="@string/Signup_title"
             android:textAlignment="center"
             android:textSize="24sp" />
 
@@ -37,6 +37,7 @@
             android:id="@+id/imageView5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:contentDescription="@string/giant_notepad_with_tiny_man_and_a_laptop"
             app:srcCompat="@drawable/stuck_at_home_to_do_list" />
 
         <EditText
@@ -45,7 +46,7 @@
             android:layout_height="55dp"
             android:layout_marginTop="30dp"
             android:ems="10"
-            android:hint="User Name"
+            android:hint="@string/Username_Input"
             android:inputType="textPersonName" />
 
         <EditText
@@ -54,7 +55,7 @@
             android:layout_height="55dp"
             android:layout_marginTop="5dp"
             android:ems="10"
-            android:hint="Email"
+            android:hint="@string/Email_input"
             android:inputType="textEmailAddress" />
 
         <EditText
@@ -63,7 +64,7 @@
             android:layout_height="55dp"
             android:layout_marginTop="5dp"
             android:ems="10"
-            android:hint="Password"
+            android:hint="@string/Password"
             android:inputType="textPassword" />
 
         <Button
@@ -72,9 +73,10 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="@color/purple_200"
+            android:backgroundTint="#5E35B1"
             android:onClick="signUpBtnClick"
-            android:text="@string/sign_up" />
+            android:text="@string/sign_up"
+            tools:ignore="DuplicateSpeakableTextCheck" />
     </LinearLayout>
 
 

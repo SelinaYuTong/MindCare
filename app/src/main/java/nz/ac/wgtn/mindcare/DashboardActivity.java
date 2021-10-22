@@ -1,12 +1,15 @@
 package nz.ac.wgtn.mindcare;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
 public class DashboardActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,4 +22,11 @@ public class DashboardActivity extends AppCompatActivity {
         Intent intent = new Intent(this, BreathingActivity.class);
         startActivity(intent);
     }
+
+    // Initialise and assign variable
+    BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
+
+    // Set Activities selected
+
+
 }

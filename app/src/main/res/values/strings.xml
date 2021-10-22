@@ -42,4 +42,12 @@
     <string name="Exhale_image">Exhale image</string>
     <string name="Inhale_image">Inhale image</string>
     <string name="SIGNUPPREFERENCES">SIGNUPPREFS</string>
+    <string name="welcome_image_desc">A person waters a metaphorical plant on top of a head statue</string>
+    <string name="Signup_title">Hello Beautiful</string>
+    <string name="Username_Input">Your username</string>
+    <string name="Email_input">Your email</string>
+    <string name="Password">Password</string>
+    <string name="giant_notepad_with_tiny_man_and_a_laptop">Giant notepad with tiny man and a laptop</string>
+    <string name="Welcome_login_msg">Welcome back !</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

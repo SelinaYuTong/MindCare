@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/raleway_bold"
-            android:text="Welcome Back"
+            android:text="@string/Welcome_login_msg"
             android:textAlignment="center"
             android:textSize="24sp" />
 
@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:fontFamily="@font/raleway_bold"
-            android:text="Login"
+            android:text="@string/login"
             android:textSize="48sp" />
 
         <ImageView
@@ -44,7 +44,7 @@
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:layout_marginTop="30dp"
-            android:hint="Email"
+            android:hint="@string/Email_input"
             android:textSize="14sp" />
 
         <com.google.android.material.textfield.TextInputEditText
@@ -52,7 +52,7 @@
             android:layout_width="300dp"
             android:layout_height="55dp"
             android:layout_marginTop="5dp"
-            android:hint="Password"
+            android:hint="@string/Password"
             android:textSize="14sp" />
 
         <Button
@@ -62,7 +62,8 @@
             android:layout_marginTop="10dp"
             android:backgroundTint="#B39DDB"
             android:onClick="loginBtnClick"
-            android:text="LOGIN" />
+            android:text="@string/login"
+            tools:ignore="DuplicateSpeakableTextCheck" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
