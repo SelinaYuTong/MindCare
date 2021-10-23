@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D6F5FF"
+    tools:context=".IntroActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-203dp"
+        tools:layout_editor_absoluteY="117dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#D6F5FF"
+                app:srcCompat="@drawable/back_arrow"
+                android:contentDescription="@string/back"
+                />
+
+            <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#D6F5FF"
+                app:srcCompat="@drawable/forward_arrow"
+                android:contentDescription="@string/forward"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/family_values_friends" />
+
+        <TextView
+            android:id="@+id/main_description_intro1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/intro_1_description_play_and_discover"
+            android:fontFamily="@font/raleway_extrabold"
+            android:text="Be Part of the Community"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/intro1_description"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/whether_it_is_breathing_conrrol_meditation_or_doing_physical_exercises_we_might_just_have_the_activities_and_tips_for_you"
+            android:text="Join our community and start sharing with like minded people. Become friends and participate to related events near you."
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/skip_btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#7E57C2"
+            android:fontFamily="@font/raleway_bold"
+            android:onClick="skipOnClick"
+            android:text="@string/skip_tour"
+            android:textAlignment="center"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
