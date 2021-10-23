@@ -3,9 +3,11 @@ package nz.ac.wgtn.mindcare;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.VideoView;
 
 public class PlayerActivity extends AppCompatActivity {
@@ -27,13 +29,11 @@ public class PlayerActivity extends AppCompatActivity {
         Uri uri=Uri.parse(video_url);
         video.setVideoURI(uri);
         video.start();
-        video.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                pd.dismiss();
-            }
-        });
-
+        video.setOnPreparedListener(mp -> pd.dismiss());
     }
 
+    public void backOnClick(View view){
+        Intent intent = new Intent(this, DashboardMainActivity.class);
+        startActivity(intent);
+    }
 }

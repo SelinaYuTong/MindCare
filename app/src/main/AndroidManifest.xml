@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MindCare">
         <activity
+            android:name=".DashboardMainActivity"
+            android:exported="false" />
+        <activity
             android:name=".BottomNavigation"
             android:exported="false" />
         <activity

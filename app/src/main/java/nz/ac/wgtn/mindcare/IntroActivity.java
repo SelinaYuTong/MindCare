@@ -16,7 +16,7 @@ public class IntroActivity extends AppCompatActivity {
     }
 
     public void skipOnClick(View view){
-        Intent intent = new Intent(this, DashboardActivity.class);
+        Intent intent = new Intent(this, DashboardMainActivity.class);
         startActivity(intent);
     }
 }
