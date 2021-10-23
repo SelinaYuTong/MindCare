@@ -38,6 +38,7 @@
     <string name="Exhale_text">Exhale (6 secs).</string>
     <string name="Final_sentence">Repeat 33 times (5 mins).</string>
     <string name="Start_Btn">Start</string>
+    <string name="reset_btn">Reset</string>
     <string name="Return_arrow">Back arrow icon</string>
     <string name="Exhale_image">Exhale image</string>
     <string name="Inhale_image">Inhale image</string>

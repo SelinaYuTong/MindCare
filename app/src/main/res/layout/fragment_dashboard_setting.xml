@@ -10,7 +10,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/textView23"
@@ -25,51 +32,51 @@
             android:textColor="@color/black_overlay"
             android:textSize="48sp" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/appearanceBtn"
+            android:layout_width="wrap_content"
             android:layout_height="55dp"
-            android:background="@color/yellow"
-            android:backgroundTintMode="add"
+            android:background="@color/light_yellow"
+            android:maxWidth="300dp"
             android:src="@drawable/setting_row" />
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/languageBtn"
+            android:layout_width="wrap_content"
             android:layout_height="55dp"
-            android:background="@color/yellow"
+            android:background="@color/light_orange"
             android:backgroundTintMode="add"
             android:src="@drawable/setting_row__1_" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageButton3"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="55dp"
-            android:background="@color/yellow"
+            android:background="@color/light_yellow"
             android:backgroundTintMode="add"
             android:src="@drawable/setting_row__2_" />
 
-        <ImageButton
-            android:id="@+id/imageButton5"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/imageButton4"
+            android:layout_width="wrap_content"
             android:layout_height="55dp"
-            android:background="@color/yellow"
+            android:background="@color/light_orange"
             android:backgroundTintMode="add"
             android:src="@drawable/setting_row__6_" />
 
-        <ImageButton
-            android:id="@+id/imageButton6"
-            android:layout_width="match_parent"
+        <ImageView
+            android:id="@+id/imageButton5"
+            android:layout_width="wrap_content"
             android:layout_height="55dp"
-            android:background="@color/yellow"
+            android:background="@color/light_yellow"
             android:backgroundTintMode="add"
             android:src="@drawable/setting_row__7_" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/imageButton7"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="55dp"
-            android:background="@color/yellow"
+            android:background="@color/light_orange"
             android:backgroundTintMode="add"
             android:src="@drawable/setting_row__8_" />
 

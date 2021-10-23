@@ -4,15 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.MediaController;
 import android.widget.VideoView;
 
 public class PlayerActivity extends AppCompatActivity {
 
-    VideoView video;
+    VideoView vvLongBreathing;
     //Paste video url in string below
     String video_url="https://www.youtube.com/watch?v=aNXKjGFUlMs";
     ProgressDialog pd;
@@ -22,18 +22,26 @@ public class PlayerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player);
-        video =(VideoView)findViewById(R.id.video);
+        vvLongBreathing =findViewById(R.id.vvLongBreathing);
+        String videoLongBreathingPath = "android.resource://"+getPackageName()+"/"+R.raw.deep_breath_video;
         pd=new ProgressDialog(this);
         pd.setMessage("Buffering video, please wait");
         pd.show();
-        Uri uri=Uri.parse(video_url);
-        video.setVideoURI(uri);
-        video.start();
-        video.setOnPreparedListener(mp -> pd.dismiss());
+        Uri uri=Uri.parse(videoLongBreathingPath);
+        vvLongBreathing.setVideoURI(uri);
+
+        MediaController mediaController = new MediaController(this);
+        vvLongBreathing.setMediaController(mediaController);
+        mediaController.setAnchorView(vvLongBreathing);
+        vvLongBreathing.start();
+        vvLongBreathing.setOnPreparedListener(mp -> pd.dismiss());
     }
 
     public void backOnClick(View view){
         Intent intent = new Intent(this, DashboardMainActivity.class);
         startActivity(intent);
+    }
+    public void resetOnClick(View view){
+        vvLongBreathing.resume();
     }
 }
