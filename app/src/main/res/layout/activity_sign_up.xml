@@ -76,6 +76,7 @@
             android:backgroundTint="#7E57C2"
             android:onClick="signUpBtnClick"
             android:text="@string/sign_up"
+            app:cornerRadius="8dp"
             tools:ignore="DuplicateSpeakableTextCheck" />
     </LinearLayout>
 

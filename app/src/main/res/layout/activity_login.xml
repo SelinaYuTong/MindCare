@@ -63,6 +63,7 @@
             android:backgroundTint="#7E57C2"
             android:onClick="loginBtnClick"
             android:text="@string/login"
+            app:cornerRadius="8dp"
             tools:ignore="DuplicateSpeakableTextCheck" />
     </LinearLayout>
 

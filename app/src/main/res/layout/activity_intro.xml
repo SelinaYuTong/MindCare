@@ -48,7 +48,7 @@
             android:onClick="skipOnClick"
             android:text="@string/skip_tour"
             android:textAlignment="center"
-            app:cornerRadius="10dp" />
+            app:cornerRadius="8dp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
