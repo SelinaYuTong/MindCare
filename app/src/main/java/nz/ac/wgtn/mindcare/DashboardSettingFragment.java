@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -15,6 +16,7 @@ import android.view.ViewGroup;
  */
 public class DashboardSettingFragment extends Fragment {
 
+    private ImageView ivAppearance;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -58,7 +60,17 @@ public class DashboardSettingFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_dashboard_setting, container, false);
+        ivAppearance = view.findViewById(R.id.appearanceImageView);
+        ivAppearance.setOnClickListener(v -> {
+            openAppearanceDialog();
+        });
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dashboard_setting, container, false);
+        return view;
+    }
+
+    private void openAppearanceDialog() {
+        AppearanceDialog appearanceDialog = new AppearanceDialog();
+        appearanceDialog.show(getChildFragmentManager(), "Appearance Dialog");
     }
 }

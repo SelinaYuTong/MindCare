@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 /**
  * The login activity class provides method for:
@@ -23,6 +24,8 @@ public class LoginActivity extends AppCompatActivity {
     private SharedPreferences loginPeference;
     private EditText loginEmail;
     private EditText loginPassword;
+    String retrievedEmail;
+    String retrievedPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,20 +36,38 @@ public class LoginActivity extends AppCompatActivity {
         loginEmail = findViewById(R.id.editTextEmailSignup);
         loginPassword = findViewById(R.id.editTextPasswordSingup);
         retrieveData();
+        setLogin();
     }
 
     public void retrieveData() {
         loginPeference = getSharedPreferences(getString(R.string.SIGNUPPREFERENCES), MODE_PRIVATE);
-        String retrievedEmail = loginPeference.getString("newEmail", null);
-        String retrievedPassword = loginPeference.getString("newPassword", null);
-        loginEmail.setText(retrievedEmail);
-        loginPassword.setText(retrievedPassword);
+        retrievedEmail = loginPeference.getString("newEmail", null);
+        retrievedPassword = loginPeference.getString("newPassword", null);
+    }
+    private void setLogin(){
+       if(!isEmpty(retrievedEmail)){
+           loginEmail.setText(retrievedEmail);
+       }
+       if(!isEmpty(retrievedPassword)){
+            loginPassword.setText(retrievedPassword);
+        }
     }
 
     public void loginBtnClick(View view) {
         if(checkDataEntered()){
-            Intent intent = new Intent(this, FirstIntroActivity.class);
-            startActivity(intent);
+            if(loginEmail.getText().toString().trim().equals(retrievedEmail)
+                    && loginPassword.getText().toString().trim().equals(retrievedPassword)) {
+                Intent intent = new Intent(this, FirstIntroActivity.class);
+                startActivity(intent);
+            }else{
+                Toast.makeText(this, "Email or password does not match with saved credential.", Toast.LENGTH_SHORT).show();
+                if(!loginEmail.getText().toString().trim().equals(retrievedEmail) ){
+                    loginEmail.setError("Incorrect email!");
+                }
+                if(!loginPassword.getText().toString().trim().equals(retrievedPassword)){
+                    loginPassword.setError("Incorrect password!");
+                }
+            }
         }
     }
 
@@ -54,7 +75,7 @@ public class LoginActivity extends AppCompatActivity {
      * Validate entered data
      */
     public boolean checkDataEntered() {
-        if (isEmpty(loginPassword)) {
+        if (isEmpty(loginPassword.getText().toString())) {
             loginPassword.setError("Please enter a password!");
             return false;
         }else if (loginPassword.getText().length() < MIN_PASSWORD_LENGTH) {
@@ -62,7 +83,7 @@ public class LoginActivity extends AppCompatActivity {
             return false;
         }
 
-        if (isValidEmail(loginEmail) == false) {
+        if (isValidEmail(loginEmail.getText().toString()) == false) {
             loginEmail.setError("Please enter valid email!");
             return false;
         }
@@ -70,13 +91,13 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-    boolean isValidEmail(EditText text) {
-        CharSequence email = text.getText().toString();
+    boolean isValidEmail(String emailAddress) {
+        CharSequence email = emailAddress;
         return (!TextUtils.isEmpty(email) && Patterns.EMAIL_ADDRESS.matcher(email).matches());
     }
 
-    boolean isEmpty(EditText text) {
-        CharSequence str = text.getText().toString();
+    boolean isEmpty(String textContent) {
+        CharSequence str = textContent;
         return TextUtils.isEmpty(str);
     }
 }

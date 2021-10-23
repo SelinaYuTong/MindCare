@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/textView23"
+            android:id="@+id/settingsTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -33,7 +33,7 @@
             android:textSize="48sp" />
 
         <ImageView
-            android:id="@+id/appearanceBtn"
+            android:id="@+id/appearanceImageView"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:background="@color/light_yellow"
@@ -41,7 +41,7 @@
             android:src="@drawable/setting_row" />
 
         <ImageView
-            android:id="@+id/languageBtn"
+            android:id="@+id/languageImageView"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:background="@color/light_orange"
@@ -49,7 +49,7 @@
             android:src="@drawable/setting_row__1_" />
 
         <ImageView
-            android:id="@+id/imageButton3"
+            android:id="@+id/privacyImageView"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:background="@color/light_yellow"
@@ -57,7 +57,7 @@
             android:src="@drawable/setting_row__2_" />
 
         <ImageView
-            android:id="@+id/imageButton4"
+            android:id="@+id/notificationImageView"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:background="@color/light_orange"
@@ -65,7 +65,7 @@
             android:src="@drawable/setting_row__6_" />
 
         <ImageView
-            android:id="@+id/imageButton5"
+            android:id="@+id/accountImageView"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:background="@color/light_yellow"
@@ -73,7 +73,7 @@
             android:src="@drawable/setting_row__7_" />
 
         <ImageView
-            android:id="@+id/imageButton7"
+            android:id="@+id/soundImageView"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
             android:background="@color/light_orange"

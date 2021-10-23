@@ -53,4 +53,8 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="back">Back</string>
     <string name="forward">Forward</string>
+    <string name="appearance_settings">Appearance Settings</string>
+    <string name="appearance_dialog">Appearance Dialog</string>
+    <string name="appearance_dialog_message">Appearance setting is successful</string>
+    <string name="dark_mode">Dark Mode</string>
 </resources>
