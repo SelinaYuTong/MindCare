@@ -24,7 +24,7 @@ public class DashboardActivity extends AppCompatActivity {
     }
 
     // Initialise and assign variable
-    BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
+    //BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
 
     // Set Activities selected
 

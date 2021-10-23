@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="10dp"
-            android:backgroundTint="#5E35B1"
+            android:backgroundTint="#7E57C2"
             android:onClick="signUpBtnClick"
             android:text="@string/sign_up"
             tools:ignore="DuplicateSpeakableTextCheck" />

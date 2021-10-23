@@ -60,7 +60,7 @@
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:backgroundTint="#B39DDB"
+            android:backgroundTint="#7E57C2"
             android:onClick="loginBtnClick"
             android:text="@string/login"
             tools:ignore="DuplicateSpeakableTextCheck" />

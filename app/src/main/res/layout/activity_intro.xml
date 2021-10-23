@@ -6,58 +6,49 @@
     android:layout_height="match_parent"
     tools:context=".IntroActivity">
 
-    <ImageView
-        android:id="@+id/sitting_floor_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/a_man_sitting_on_the_floor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.494"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.191"
-        app:srcCompat="@drawable/sitting_on_floor" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/skip_btn"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/raleway_bold"
-        android:onClick="skipOnClick"
-        android:text="@string/skip_tour"
-        android:textAlignment="center"
-        app:cornerRadius="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/intro1_description"
-        app:layout_constraintVertical_bias="0.382" />
+        <ImageView
+            android:id="@+id/sitting_floor_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/a_man_sitting_on_the_floor"
+            app:srcCompat="@drawable/sitting_on_floor" />
 
-    <TextView
-        android:id="@+id/intro1_description"
-        android:layout_width="296dp"
-        android:layout_height="86dp"
-        android:contentDescription="@string/whether_it_is_breathing_conrrol_meditation_or_doing_physical_exercises_we_might_just_have_the_activities_and_tips_for_you"
-        android:text="@string/whether_it_is_breathing_conrrol_meditation_or_doing_physical_exercises_we_might_just_have_the_activities_and_tips_for_you"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sitting_floor_image"
-        app:layout_constraintVertical_bias="0.447" />
+        <TextView
+            android:id="@+id/main_description_intro1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/intro_1_description_play_and_discover"
+            android:fontFamily="@font/raleway_extrabold"
+            android:text="@string/play_and_discover_ways_to_relax"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/main_description_intro1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/intro_1_description_play_and_discover"
-        android:fontFamily="@font/raleway_extrabold"
-        android:text="@string/play_and_discover_ways_to_relax"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/intro1_description"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sitting_floor_image" />
+        <TextView
+            android:id="@+id/intro1_description"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/whether_it_is_breathing_conrrol_meditation_or_doing_physical_exercises_we_might_just_have_the_activities_and_tips_for_you"
+            android:text="@string/whether_it_is_breathing_conrrol_meditation_or_doing_physical_exercises_we_might_just_have_the_activities_and_tips_for_you"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/skip_btn"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#7E57C2"
+            android:fontFamily="@font/raleway_bold"
+            android:onClick="skipOnClick"
+            android:text="@string/skip_tour"
+            android:textAlignment="center"
+            app:cornerRadius="10dp" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
