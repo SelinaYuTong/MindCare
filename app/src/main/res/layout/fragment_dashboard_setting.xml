@@ -7,18 +7,71 @@
     android:background="#D6F5FF"
     tools:context=".DashboardSettingFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvSetting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Settings"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/raleway_bold"
+            android:text="Settings"
+            android:textAlignment="center"
+            android:textColor="@color/black_overlay"
+            android:textSize="48sp" />
 
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/yellow"
+            android:backgroundTintMode="add"
+            android:src="@drawable/setting_row" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/yellow"
+            android:backgroundTintMode="add"
+            android:src="@drawable/setting_row__1_" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/yellow"
+            android:backgroundTintMode="add"
+            android:src="@drawable/setting_row__2_" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/yellow"
+            android:backgroundTintMode="add"
+            android:src="@drawable/setting_row__6_" />
+
+        <ImageButton
+            android:id="@+id/imageButton6"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/yellow"
+            android:backgroundTintMode="add"
+            android:src="@drawable/setting_row__7_" />
+
+        <ImageButton
+            android:id="@+id/imageButton7"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/yellow"
+            android:backgroundTintMode="add"
+            android:src="@drawable/setting_row__8_" />
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
