@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#D6F5FF"
-    tools:context=".IntroActivity">
+    tools:context=".ThirdIntroActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,32 +21,34 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/ibIntroThirdBack"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#D6F5FF"
                 app:srcCompat="@drawable/back_arrow"
+                android:onClick="backThirdClick"
                 android:contentDescription="@string/back"
                 />
 
             <ImageButton
-                android:id="@+id/imageButton3"
+                android:id="@+id/ibIntroThirdForward"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="#D6F5FF"
                 app:srcCompat="@drawable/forward_arrow"
+                android:onClick="forwardThirdClick"
                 android:contentDescription="@string/forward"
                 />
+
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/sitting_floor_image"
-            android:layout_width="wrap_content"
+            android:id="@+id/imageView14"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/a_man_sitting_on_the_floor"
-            app:srcCompat="@drawable/sitting_on_floor" />
+            app:srcCompat="@drawable/open_peeps_bust" />
 
         <TextView
             android:id="@+id/main_description_intro1"
@@ -55,7 +57,7 @@
             android:layout_marginTop="30dp"
             android:contentDescription="@string/intro_1_description_play_and_discover"
             android:fontFamily="@font/raleway_extrabold"
-            android:text="@string/play_and_discover_ways_to_relax"
+            android:text="Get Expert Advice"
             android:textSize="20sp" />
 
         <TextView
@@ -64,17 +66,17 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:contentDescription="@string/whether_it_is_breathing_conrrol_meditation_or_doing_physical_exercises_we_might_just_have_the_activities_and_tips_for_you"
-            android:text="@string/whether_it_is_breathing_conrrol_meditation_or_doing_physical_exercises_we_might_just_have_the_activities_and_tips_for_you"
+            android:text="If you feel like you need to talk to someone, get in touch with one of our team member. They are happy to assist."
             android:textAlignment="center" />
 
         <Button
-            android:id="@+id/skip_btn"
+            android:id="@+id/skip_btnIntroThird"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:backgroundTint="#7E57C2"
             android:fontFamily="@font/raleway_bold"
-            android:onClick="skipOnClick"
+            android:onClick="skipThirdOnClick"
             android:text="@string/skip_tour"
             android:textAlignment="center"
             app:cornerRadius="8dp" />

@@ -27,7 +27,13 @@
             android:name=".DashboardActivity"
             android:exported="true" />
         <activity
-            android:name=".IntroActivity"
+            android:name=".FirstIntroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecondIntroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ThirdIntroActivity"
             android:exported="false" />
         <activity
             android:name=".SignUpActivity"

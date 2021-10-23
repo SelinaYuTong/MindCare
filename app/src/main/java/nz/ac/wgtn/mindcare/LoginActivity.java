@@ -9,7 +9,6 @@ import android.text.TextUtils;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 /**
  * The login activity class provides method for:
@@ -46,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public void loginBtnClick(View view) {
         if(checkDataEntered()){
-            Intent intent = new Intent(this, IntroActivity.class);
+            Intent intent = new Intent(this, FirstIntroActivity.class);
             startActivity(intent);
         }
     }
