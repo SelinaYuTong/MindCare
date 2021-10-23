@@ -34,6 +34,12 @@ public class DashboardMainActivity extends AppCompatActivity  {
                 case R.id.nav_stats:
                     fragment = new DashboardStatisticsFragment();
                     break;
+                case R.id.nav_contact:
+                    fragment = new DashboardContactFragment();
+                    break;
+                case R.id.nav_settings:
+                    fragment = new DashboardSettingFragment();
+                    break;
                 default:
                     throw new IllegalStateException("Unexpected value: " + item.getItemId());
             }
