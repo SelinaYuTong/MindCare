@@ -15,7 +15,7 @@ import android.widget.Toast;
  * The login activity class provides method for:
  * 1. validate email and password
  * 2. log in user with retrieving email and password from shared preferences
- * 3. Allow user to log in with entering valid email and password
+ * 3. Allow user to log in with entering matched email and password
  */
 public class LoginActivity extends AppCompatActivity {
 
