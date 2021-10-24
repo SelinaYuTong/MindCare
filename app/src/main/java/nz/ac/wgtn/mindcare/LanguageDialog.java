@@ -18,7 +18,7 @@ public class LanguageDialog extends AppCompatDialogFragment {
     @Override
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-        builder.setTitle(R.string.appearance_settings)
+        builder.setTitle(R.string.language_settings)
                 .setMessage(R.string.set_a_language)
                 .setPositiveButton(R.string.english_language, (dialog, which) -> {
                     Locale locale = new Locale("en");
