@@ -78,6 +78,7 @@
                 android:layout_margin="20dp"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
+                android:background="@color/white"
                 android:contentDescription="Arrow going up slowly"
                 android:onClick="longBreathOnClick"
                 app:layout_constraintStart_toStartOf="parent"
