@@ -37,8 +37,8 @@ public class PlayerActivity extends AppCompatActivity {
         vvLongBreathing.setOnPreparedListener(mp -> pd.dismiss());
     }
 
-    public void backOnClick(View view){
-        Intent intent = new Intent(this, DashboardMainActivity.class);
+    public void backOnBreathClick(View view){
+        Intent intent = new Intent(this, BreathingActivity.class);
         startActivity(intent);
     }
     public void resetOnClick(View view){
