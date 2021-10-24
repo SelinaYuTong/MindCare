@@ -54,7 +54,9 @@
             android:layout_height="55dp"
             android:background="@color/light_yellow"
             android:backgroundTintMode="add"
-            android:src="@drawable/setting_row__2_" />
+            android:onClick="toDoOnClick"
+            android:src="@drawable/setting_row__2_"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
             android:id="@+id/notificationImageView"
@@ -62,7 +64,9 @@
             android:layout_height="55dp"
             android:background="@color/light_orange"
             android:backgroundTintMode="add"
-            android:src="@drawable/setting_row__6_" />
+            android:onClick="toDoOnClick"
+            android:src="@drawable/setting_row__6_"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
             android:id="@+id/accountImageView"
@@ -70,7 +74,9 @@
             android:layout_height="55dp"
             android:background="@color/light_yellow"
             android:backgroundTintMode="add"
-            android:src="@drawable/setting_row__7_" />
+            android:onClick="toDoOnClick"
+            android:src="@drawable/setting_row__7_"
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
             android:id="@+id/soundImageView"
@@ -78,7 +84,9 @@
             android:layout_height="55dp"
             android:background="@color/light_orange"
             android:backgroundTintMode="add"
-            android:src="@drawable/setting_row__8_" />
+            android:onClick="toDoOnClick"
+            android:src="@drawable/setting_row__8_"
+            tools:ignore="SpeakableTextPresentCheck" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

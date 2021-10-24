@@ -97,7 +97,8 @@
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="@string/breathing_practice"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/textView4"
@@ -121,7 +122,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
-                app:srcCompat="@drawable/lotus" />
+                android:onClick="toDoOnClick"
+                app:srcCompat="@drawable/lotus"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -133,6 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/raleway_bold"
+                    android:onClick="toDoOnClick"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="@string/meditation_activity"
@@ -143,6 +147,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/raleway_medium"
+                    android:onClick="toDoOnClick"
                     android:text="@string/mindfulness_meditation_can_reduce_stress_and_increase_well_being" />
             </LinearLayout>
 
@@ -159,6 +164,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                android:onClick="toDoOnClick"
                 app:srcCompat="@drawable/casual_exercise" />
 
             <LinearLayout
@@ -171,6 +177,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/raleway_bold"
+                    android:onClick="toDoOnClick"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="@string/physical_exercise"
@@ -181,6 +188,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/raleway_medium"
+                    android:onClick="toDoOnClick"
                     android:text="@string/whether_it_is_breathing_conrrol_meditation_or_doing_physical_exercises_we_might_just_have_the_activities_and_tips_for_you" />
             </LinearLayout>
 
@@ -197,6 +205,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
+                android:onClick="toDoOnClick"
                 app:srcCompat="@drawable/teamwork" />
 
             <LinearLayout
@@ -209,6 +218,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/raleway_bold"
+                    android:onClick="toDoOnClick"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="@string/join_the_community"
@@ -218,6 +228,7 @@
                     android:id="@+id/textView11"
                     android:layout_width="212dp"
                     android:layout_height="50dp"
+                    android:onClick="toDoOnClick"
                     android:text="@string/we_are_more_likely_to_achieve_our_goals_if_we_are_in_a_community" />
             </LinearLayout>
 

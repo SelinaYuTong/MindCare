@@ -67,4 +67,7 @@
     <string name="french_language">français</string>
     <string name="language_settings">Paramètres de langue</string>
     <string name="settings">Les paramètres</string>
+    <string name="future_works_settings">Travaux futurs requis</string>
+    <string name="future_works_message">Désolé, des travaux futurs sont requis sur votre activité cliquée.</string>
+    <string name="close">proche</string>
 </resources>
