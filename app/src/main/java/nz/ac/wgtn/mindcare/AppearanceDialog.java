@@ -1,7 +1,6 @@
 package nz.ac.wgtn.mindcare;
 
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -19,9 +18,13 @@ public class AppearanceDialog extends AppCompatDialogFragment {
         .setMessage(R.string.set_a_mode)
         .setPositiveButton(R.string.dark_mode, (dialog, which) -> {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            getActivity().finish();
+            getActivity().startActivity(getActivity().getIntent());
             this.dismiss();
         }).setNegativeButton(R.string.normal_mode, (dialog, which) -> {
             AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            getActivity().finish();
+            getActivity().startActivity(getActivity().getIntent());
             this.dismiss();
         }).create();
         return builder.create();

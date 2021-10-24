@@ -17,6 +17,7 @@ import android.widget.ImageView;
 public class DashboardSettingFragment extends Fragment {
 
     private ImageView ivAppearance;
+    private ImageView ivLanguage;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -65,6 +66,10 @@ public class DashboardSettingFragment extends Fragment {
         ivAppearance.setOnClickListener(v -> {
             openAppearanceDialog();
         });
+        ivLanguage = view.findViewById(R.id.languageImageView);
+        ivLanguage.setOnClickListener(v -> {
+            openLanguageDialog();
+        });
         // Inflate the layout for this fragment
         return view;
     }
@@ -72,5 +77,10 @@ public class DashboardSettingFragment extends Fragment {
     private void openAppearanceDialog() {
         AppearanceDialog appearanceDialog = new AppearanceDialog();
         appearanceDialog.show(getChildFragmentManager(), "Appearance Dialog");
+    }
+
+    private void openLanguageDialog() {
+        LanguageDialog languageDialog = new LanguageDialog();
+        languageDialog.show(getChildFragmentManager(), "Language Dialog");
     }
 }

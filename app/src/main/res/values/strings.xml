@@ -59,4 +59,11 @@
     <string name="set_a_mode">Please click on below to set a mode</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="normal_mode">Normal Mode</string>
+    <string name="contact">Contact</string>
+    <string name="statistics">Statistics</string>
+    <string name="language_settings">Language Settings</string>
+    <string name="set_a_language">Please click on below to set a language</string>
+    <string name="english_language">English</string>
+    <string name="french_language">French</string>
+    <string name="settings">Settings</string>
 </resources>
