@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            android:layout_marginBottom="50dp"
+            android:layout_marginBottom="10dp"
             android:background="@color/white"
             android:fontFamily="@font/raleway_bold"
             android:text="@string/settings"
@@ -33,10 +33,17 @@
             android:textSize="48sp" />
 
         <ImageView
+            android:id="@+id/settingImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/icons8_setting_64" />
+
+        <ImageView
             android:id="@+id/appearanceImageView"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
-            android:background="@color/light_yellow"
+            android:background="@color/yellow"
             android:maxWidth="300dp"
             android:src="@drawable/setting_row" />
 
@@ -44,7 +51,7 @@
             android:id="@+id/languageImageView"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
-            android:background="@color/light_orange"
+            android:background="@color/yellow"
             android:backgroundTintMode="add"
             android:src="@drawable/setting_row__1_" />
 
@@ -52,7 +59,7 @@
             android:id="@+id/privacyImageView"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
-            android:background="@color/light_yellow"
+            android:background="@color/yellow"
             android:backgroundTintMode="add"
             android:onClick="toDoOnClick"
             android:src="@drawable/setting_row__2_"
@@ -62,7 +69,7 @@
             android:id="@+id/notificationImageView"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
-            android:background="@color/light_orange"
+            android:background="@color/yellow"
             android:backgroundTintMode="add"
             android:onClick="toDoOnClick"
             android:src="@drawable/setting_row__6_"
@@ -72,7 +79,7 @@
             android:id="@+id/accountImageView"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
-            android:background="@color/light_yellow"
+            android:background="@color/yellow"
             android:backgroundTintMode="add"
             android:onClick="toDoOnClick"
             android:src="@drawable/setting_row__7_"
@@ -82,7 +89,7 @@
             android:id="@+id/soundImageView"
             android:layout_width="wrap_content"
             android:layout_height="55dp"
-            android:background="@color/light_orange"
+            android:background="@color/yellow"
             android:backgroundTintMode="add"
             android:onClick="toDoOnClick"
             android:src="@drawable/setting_row__8_"
