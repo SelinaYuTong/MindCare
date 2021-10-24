@@ -23,4 +23,13 @@ public class BreathingActivity extends AppCompatActivity {
         Intent intent = new Intent(this, DashboardMainActivity.class);
         startActivity(intent);
     }
+
+    public void toDoBreathingOnClick(View view){
+        openFutureWorksDialog();
+    }
+
+    private void openFutureWorksDialog() {
+        FutureworksDialog futureworksDialog = new FutureworksDialog();
+        futureworksDialog.show(getSupportFragmentManager(), "Language Dialog");
+    }
 }

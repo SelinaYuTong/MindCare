@@ -130,9 +130,11 @@
                 android:layout_margin="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="32dp"
+                android:onClick="toDoBreathingOnClick"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView8"
-                app:srcCompat="@drawable/ellipse" />
+                app:srcCompat="@drawable/ellipse"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -145,10 +147,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/raleway_bold"
+                    android:onClick="toDoBreathingOnClick"
                     android:text="Coherent Breathing"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView15"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/textView17"
@@ -157,9 +161,11 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="40dp"
                     android:fontFamily="@font/raleway_medium"
+                    android:onClick="toDoBreathingOnClick"
                     android:text="Long slow breaths to help you relax and release tension."
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView16" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView16"
+                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
         </LinearLayout>
@@ -176,9 +182,11 @@
                 android:layout_margin="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="32dp"
+                android:onClick="toDoBreathingOnClick"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView9"
-                app:srcCompat="@drawable/square" />
+                app:srcCompat="@drawable/square"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -191,10 +199,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/raleway_bold"
+                    android:onClick="toDoBreathingOnClick"
                     android:text="Square Breathing"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView17" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView17"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/textView19"
@@ -202,9 +212,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="40dp"
+                    android:onClick="toDoBreathingOnClick"
                     android:text="For easy steps to bring calm to an intense situation."
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView18"
+                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
         </LinearLayout>
@@ -221,9 +233,11 @@
                 android:layout_margin="20dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginTop="32dp"
+                android:onClick="toDoBreathingOnClick"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/imageView11"
-                app:srcCompat="@drawable/group_478" />
+                app:srcCompat="@drawable/group_478"
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -236,10 +250,12 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:fontFamily="@font/raleway_bold"
+                    android:onClick="toDoBreathingOnClick"
                     android:text="4-7-8 Breathing"
                     android:textSize="16sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView19" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView19"
+                    tools:ignore="TouchTargetSizeCheck" />
 
                 <TextView
                     android:id="@+id/textView21"
@@ -247,9 +263,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="40dp"
+                    android:onClick="toDoBreathingOnClick"
                     android:text="Simple breathing tool for general relaxation and to reduce stress."
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView20"
+                    tools:ignore="TouchTargetSizeCheck" />
             </LinearLayout>
 
         </LinearLayout>
