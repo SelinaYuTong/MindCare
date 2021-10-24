@@ -93,6 +93,7 @@
                     android:layout_marginTop="0dp"
                     android:layout_marginEnd="0dp"
                     android:fontFamily="@font/raleway_bold"
+                    android:onClick="breathOnClick"
                     android:paddingTop="10dp"
                     android:paddingBottom="10dp"
                     android:text="@string/breathing_practice"
@@ -103,6 +104,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:fontFamily="@font/raleway_medium"
+                    android:onClick="breathOnClick"
                     android:text="@string/abdominal_breathing_brings_about_a_range_of_health_benefits" />
             </LinearLayout>
 

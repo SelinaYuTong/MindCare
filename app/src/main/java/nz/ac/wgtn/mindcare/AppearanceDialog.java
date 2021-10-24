@@ -7,6 +7,7 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
 public class AppearanceDialog extends AppCompatDialogFragment {
@@ -15,12 +16,13 @@ public class AppearanceDialog extends AppCompatDialogFragment {
     public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle(R.string.appearance_settings)
-        .setMessage(R.string.appearance_dialog_message)
-        .setPositiveButton(R.string.dark_mode, new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-
-            }
+        .setMessage(R.string.set_a_mode)
+        .setPositiveButton(R.string.dark_mode, (dialog, which) -> {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+            this.dismiss();
+        }).setNegativeButton(R.string.normal_mode, (dialog, which) -> {
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+            this.dismiss();
         }).create();
         return builder.create();
     }

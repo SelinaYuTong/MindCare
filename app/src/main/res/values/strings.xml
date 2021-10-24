@@ -56,5 +56,7 @@
     <string name="appearance_settings">Appearance Settings</string>
     <string name="appearance_dialog">Appearance Dialog</string>
     <string name="appearance_dialog_message">Appearance setting is successful</string>
+    <string name="set_a_mode">Please click on below to set a mode</string>
     <string name="dark_mode">Dark Mode</string>
+    <string name="normal_mode">Normal Mode</string>
 </resources>
